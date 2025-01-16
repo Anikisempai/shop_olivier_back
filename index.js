@@ -17,6 +17,11 @@ app.use(
   })
 );
 
+
+//on indique le chemin des routes
+const routes = require("./routes")
+app.use(routes);
+
 // on indique que l'application va ecouter sur le port 5000 et on retroune dans la console un message
 app.listen(5000, () => {
   console.log("app listening on port 5000");
